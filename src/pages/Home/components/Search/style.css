@@ -1,0 +1,74 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.slogan {
+    color: #000000;
+}
+.slogan h1{
+    display: flex;
+    justify-content: center;
+    padding:5px;
+    font-size: 2vw;
+    /* color: #263238; */
+    color: #000;
+}
+
+div .div-search {
+    background-color:#FBC02D;
+    padding: 0 100px 5px;
+}
+
+.div-search .col-md-2{
+    align-self: center !important;
+}
+
+.sugestoesCidade{
+    display: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.959);
+    border: solid 2px #FBC02D;
+    position:absolute;
+    top: 35px;
+    z-index: 5;
+    border-radius: 5px !important;
+}
+
+.sugestoesCidade > li:hover{
+    cursor: pointer !important;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.button-search{
+    box-sizing: border-box;
+    padding: 5px 25px !important;
+    margin-left: 10px !important;
+    text-decoration: none !important;
+    background-color: #263238 !important;
+    border-radius: 5px !important;
+    border: 1px solid #FBC02D !important;
+    transition: background 0.2s !important;
+    color: #FBC02D !important;
+}
+
+.button-search:hover{
+    background-color: #FBC02D !important;
+    color: #ffffff !important;
+    border: 2px solid #263238 !important;
+}
+
+.form-control-sm {
+    border-radius: 0.2rem !important;
+}
+
+.inputgroup {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    div .div-search {
+        padding: 0 10px 5px;
+    }
+}

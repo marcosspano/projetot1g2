@@ -1,0 +1,96 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBC02D;
+    padding: 20px 20px 10px;
+    width: 100%;
+    max-height: 65px;
+    z-index: 1000;
+    position: sticky;
+    bottom: 0;
+}
+
+.rodape .box-cookies.hide {
+    display: none !important;
+}
+
+.rodape .box-cookies {
+    position: absolute;
+    top: -110px;
+    background: rgba(46, 46, 46, .9);
+    width: 100%;
+    height: 100px;
+    z-index: 998;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+
+.rodape .box-cookies .msg-cookies,
+.rodape .box-cookies .btn-cookies {
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.rodape .box-cookies .msg-cookies {
+    padding: 10px;
+}
+
+.rodape .box-cookies .btn-cookies {
+    background: #1e88e5;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 30px;
+    height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .rodape .box-cookies {
+        flex-direction: column;
+    }
+}
+
+.rodape .rodape__Copyright p.copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+p.copyright {
+    align-items: center;
+}
+
+.rodape .rodape__Social ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape .rodape__Social ul li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.rodape .rodape__Social ul li img {
+    width: 100%;
+    max-width: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .rodape {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rodape .rodape__Social {
+        display: none;
+    }
+
+}

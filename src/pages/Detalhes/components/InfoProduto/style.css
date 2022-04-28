@@ -1,0 +1,100 @@
+.section-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #191B1D;
+    align-items: center;
+    padding: 5px 3vw 3px;
+    margin: 0;
+}
+
+
+.div-titulo h5,h4{
+    color: #fff;
+    margin-bottom: 0px !important;
+}
+
+
+.section-info{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    align-items: center;
+    padding: 10px 3vw 5px;
+}
+
+.div-endereco{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.localiz, .info-add {
+    color:#fbc12d;
+    line-height: 16px;
+    padding-left: 5px;
+    margin: 0;
+
+}
+
+.div-avaliacao {
+    display: flex;
+    align-items: center;
+}
+
+.ava-quali{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ava-1, .ava-2{
+    color:#fbc12d;
+    line-height: 15px;
+    margin: 0;
+}
+
+.ava-quanti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #FBC02D;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin: 8px;
+    border-radius: 30%;
+}
+
+p.ava-3{
+    align-self: center;
+    margin: 0;
+}
+
+.div-actions{
+    display: flex;
+}
+.icon-share {
+    padding: 10px 0 10px 3vw;
+}
+
+.icon-like{
+    padding: 10px 0 10px 10px;
+
+}
+/* 
+@media screen and (max-width:768px) {
+.section-galery {
+    min-height: 170vh;
+    }
+} */
+
+@media screen and (max-width:768px){
+    .section-galery{
+        min-height: 100%;
+    }
+}

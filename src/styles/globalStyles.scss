@@ -1,0 +1,71 @@
+$primary: #FBC02D;
+$secondary: #191B1D;
+$box-shadow-sm: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+  --bs-yellow: #FBC02D;
+  --bs-gray-700: #607D8B;
+  --bs-gray-900: #263238;
+}
+
+ header, body, input, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+.uneditable-input:focus {   
+  border-color: none;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.min-height-100 { min-height: calc(98vh - 140px); }
+.font-500 { font-weight: 500; }
+.font-size-14 {
+  font-size: 14px;
+}
+
+.background-error-input {
+  background-color: #FFE1E1 !important;
+}
+
+.olho {
+  background-color: transparent !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.fechar__Login {
+  position: absolute;
+  float: right;
+  top: 100px;
+  right: 80px;
+  text-decoration: none;
+}
+
+@import "./calendar.scss";
+@import "./mapa.scss";

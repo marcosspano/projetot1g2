@@ -1,0 +1,261 @@
+:root {
+    --cor-padrao: #FBC02D;
+    --sombra-padrao: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+    --sombra-hover: 0 8px 16px 0 rgba(0, 0, 0, 0.2);;
+}
+
+.main__Container {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-top: 100px 10px;
+
+    position: relative;
+
+
+}
+.main__Container .sugestaoBusca {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+
+}
+
+.main__Container .sugestaoBusca h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #ccc;
+    width: 100%;
+    margin: 0 30px;
+    padding: 10px 10px;
+}
+
+.main__Container .sugestaoBusca p {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.main__Container .sugestaoBusca > p {
+    margin: 0 30px;
+    padding: 10px 0 10px 10px;
+    background-color: #263238;
+    color: #fff;
+}
+
+.main__Container .card {
+    box-shadow: var(--sombra-padrao);
+    transition: 0.3s;
+    width: 300px;
+    margin: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    color: #000000;
+}
+
+.main__Container .card img {
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.main__Container .card:hover img {
+    box-shadow: var(--sombra-hover);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.main__Container .card:hover img {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.main__Container .card .legenda {
+
+    cursor: pointer;
+    width: 100%;
+    padding: 2px 16px;
+    color: #fff;
+    background-color: #263238;
+
+    z-index: 1;
+
+}
+
+.main__Container .card .legenda p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main__Container .blocoLista {
+    width: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main__Container .blocoLista h2 {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    color: #fff;
+    background-color: #263238;
+}
+
+.main__Container .blocoLista .cartao {
+    width: 620px;
+    background-color: #263238;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    position: relative;
+}
+
+.main__Container .blocoLista .cartao .heart {
+
+    background-color: #fff;
+    height: 16px;
+    transform: rotate(-45deg);
+    width: 16px;
+
+    position: absolute;
+    right: 60px;
+    top: 18px;
+
+}
+
+.main__Container .blocoLista .cartao .heart:before, .main__Container .blocoLista .cartao .heart:after {
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+
+}
+
+.main__Container .blocoLista .cartao .heart:before {
+    left: 10px;
+}
+
+.main__Container .blocoLista .cartao .heart:after {
+    top: -10px;
+}
+
+.main__Container .blocoLista .cartao .nota {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    right: 10px;
+    top: 10px;
+    
+    padding: 5px;
+    
+    background-color: #fff;
+    color: #FBC02D;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+
+.main__Container .blocoLista .cartao .cartaoImg {
+    width: 330px;
+}
+
+.main__Container .blocoLista .cartao .cartaoImg img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main__Container .blocoLista .cartao .cartaoDados {
+    float: right;
+    padding: 20px;
+    width: 290px;
+
+    position: relative;
+
+}
+
+.main__Container .blocoLista .cartao .cartaoDados p {
+    font-size: 14px;
+    word-break: normal;
+    max-width: 35ch;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+}
+
+.main__Container .blocoLista .cartao .cartaoDados button {
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    background-color: var(--cor-padrao);
+    box-shadow: var(--sombra-padrao);
+    color: #263238;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main__Container .blocoLista .cartao .cartaoDados button:hover {
+    color: #fff;
+}
+
+.main__Container .blocoLista .cartao .cartaoDados button:hover {
+    box-shadow: var(--sombra-hover);
+}
+
+
+@media screen and (max-width: 768px) {
+    .main__Container .blocoLista .cartao {
+        width: 330px;
+    }
+
+    .main__Container .blocoLista .cartao .heart {
+        opacity: 0.7;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .main__Container .blocoLista .cartao .heart:hover {
+        opacity: 1;
+    }
+
+    .main__Container .blocoLista .cartao .nota {
+        opacity: 0.7;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .main__Container .blocoLista .cartao .nota:hover {
+        opacity: 1;
+    }
+
+    .main__Container .blocoLista .cartao .cartaoDados {
+       width: 350px;
+    }
+
+}
